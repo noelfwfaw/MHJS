@@ -4,7 +4,7 @@
     "description": "这是一个使用 MaaFramework 创建的风之痕迹PC端猎金脚本。",
     "license": "MIT",
     "welcome": "首次使用！欢迎使用 MHJS!",
-    "github": "https://github.com/noelfwfaw/MHJS.git",
+    "github": "https://github.com/noelfwfaw/MHJS",
     "version": "0.0.1",
     "controller": [
         {
