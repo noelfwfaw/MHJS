@@ -26,6 +26,10 @@
             "选择助战",
             "开始战斗",
             "[JumpBack]寻找人数1",
+            "[JumpBack]寻找人数2",
+            "[JumpBack]寻找人数3",
+            "[JumpBack]寻找人数4",
+            "[JumpBack]寻找人数5",
             "[JumpBack]点击筛选"
         ]
     },
@@ -45,6 +49,91 @@
                 ]
             }
         },
+        "post_delay": 500,
+        "action": {
+            "type": "Click"
+        }
+    },
+    "寻找人数2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "识别人数2.png",
+                "roi": [
+                    266,
+                    491,
+                    171,
+                    615
+                ],
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "post_delay": 500,
+        "action": {
+            "type": "Click"
+        }
+    },
+    "寻找人数3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "识别人数3.png",
+                "roi": [
+                    266,
+                    491,
+                    171,
+                    615
+                ],
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "post_delay": 500,
+        "action": {
+            "type": "Click"
+        }
+    },
+    "寻找人数4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "识别人数4.png",
+                "roi": [
+                    266,
+                    491,
+                    171,
+                    615
+                ],
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "post_delay": 500,
+        "action": {
+            "type": "Click"
+        }
+    },
+    "寻找人数5": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "识别人数5.png",
+                "roi": [
+                    266,
+                    491,
+                    171,
+                    615
+                ],
+                "threshold": [
+                    0.95
+                ]
+            }
+        },
+        "post_delay": 500,
         "action": {
             "type": "Click"
         }
@@ -75,7 +164,7 @@
         },
         "repeat": 2,
         "repeat_delay": 1000,
-        "post_delay": 1000
+        "post_delay": 500
     },
     "选择助战": {
         "recognition": {
@@ -93,6 +182,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 500,
         "next": [
             "开始战斗"
         ]
@@ -113,13 +203,14 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 5000,
         "next": [
             "开始战斗",
             "[JumpBack]Ap补给",
             "[JumpBack]跳过回合",
             "战斗胜利",
-            "[JumpBack]等待1秒",
-            "初始化"
+            "初始化",
+            "[JumpBack]等待1秒"
         ]
     },
     "跳过回合": {
@@ -143,7 +234,7 @@
         "action": {
             "type": "DoNothing"
         },
-        "post_delay": 100
+        "post_delay": 1000
     },
     "战斗胜利": {
         "recognition": {
@@ -151,10 +242,10 @@
             "param": {
                 "expected": "战斗胜利",
                 "roi": [
-                    226,
-                    101,
-                    293,
-                    105
+                    126,
+                    94,
+                    495,
+                    307
                 ]
             }
         },
@@ -184,7 +275,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1000,
+        "post_delay": 5000,
         "next": [
             "取消好友申请",
             "战斗结束",
@@ -207,6 +298,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 500,
         "next": [
             "取消好友申请",
             "猎金进房"
