@@ -26,10 +26,6 @@
             "选择助战",
             "开始战斗",
             "[JumpBack]寻找人数1",
-            "[JumpBack]寻找人数2",
-            "[JumpBack]寻找人数3",
-            "[JumpBack]寻找人数4",
-            "[JumpBack]寻找人数5",
             "[JumpBack]点击筛选"
         ]
     },
@@ -44,93 +40,7 @@
                     171,
                     615
                 ],
-                "threshold": [
-                    0.95
-                ]
-            }
-        },
-        "post_delay": 500,
-        "action": {
-            "type": "Click"
-        }
-    },
-    "寻找人数2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": "识别人数2.png",
-                "roi": [
-                    266,
-                    491,
-                    171,
-                    615
-                ],
-                "threshold": [
-                    0.95
-                ]
-            }
-        },
-        "post_delay": 500,
-        "action": {
-            "type": "Click"
-        }
-    },
-    "寻找人数3": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": "识别人数3.png",
-                "roi": [
-                    266,
-                    491,
-                    171,
-                    615
-                ],
-                "threshold": [
-                    0.95
-                ]
-            }
-        },
-        "post_delay": 500,
-        "action": {
-            "type": "Click"
-        }
-    },
-    "寻找人数4": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": "识别人数4.png",
-                "roi": [
-                    266,
-                    491,
-                    171,
-                    615
-                ],
-                "threshold": [
-                    0.95
-                ]
-            }
-        },
-        "post_delay": 500,
-        "action": {
-            "type": "Click"
-        }
-    },
-    "寻找人数5": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": "识别人数5.png",
-                "roi": [
-                    266,
-                    491,
-                    171,
-                    615
-                ],
-                "threshold": [
-                    0.95
-                ]
+                "threshold": 0.95
             }
         },
         "post_delay": 500,
